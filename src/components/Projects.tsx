@@ -2,28 +2,32 @@ import { ExternalLink, Github, Code, Zap, Globe } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import fus from "@/assets/fus.png";
+import library from "@/assets/library.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered Task Automation Platform",
-      description: "A comprehensive automation platform that uses AI to streamline business workflows and processes. Features include intelligent task scheduling, natural language processing, and seamless API integrations.",
-      tech: ["React", "Node.js", "OpenAI API", "PostgreSQL", "Docker"],
-      category: "AI Automation",
+      title: "Library Management System",
+      description: "A web-based system for managing the library of Sta. Cruz National High School. Features include book catalog management, student and staff accounts, borrowing and return tracking, and real-time availability monitoring.",
+      tech: ["Next.js", "TypeScript","React Js","Mysql"],
+      category: "Web Development",
       icon: <Zap className="h-6 w-6" />,
-      liveUrl: "https://automation-platform.example.com",
+      liveUrl: "https://scnhs-learniverse.vercel.app/",
       githubUrl: "https://github.com/andrewbaldonado/ai-automation",
       featured: true,
+      image: library,
     },
     {
-      title: "E-Commerce Analytics Dashboard",
-      description: "Real-time analytics dashboard for e-commerce businesses with advanced reporting, customer insights, and sales forecasting capabilities.",
-      tech: ["Next.js", "TypeScript", "Chart.js", "Tailwind CSS"],
+      title: "Fund Utilization System",
+      description: "A real-time analytics dashboard for monitoring and managing the Fund Utilization of the Municipality of Samar. Provides insights into budget allocation, expenditure tracking, and financial reporting for transparent governance.",
+      tech: ["Next.js", "TypeScript","React Js"],
       category: "Web Development",
       icon: <Globe className="h-6 w-6" />,
-      liveUrl: "https://ecommerce-dashboard.example.com",
+      liveUrl: "https://fus-github-io.vercel.app/",
       githubUrl: "https://github.com/andrewbaldonado/ecommerce-dashboard",
       featured: true,
+      image: fus,
     },
     {
       title: "Smart Home IoT Controller",
@@ -109,6 +113,14 @@ const Projects = () => {
                     {project.description}
                   </p>
                   
+                  {/* Project Image */}
+                    {project.image && (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-48 object-cover rounded-md"
+                      />
+                    )}
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech, techIndex) => (
@@ -139,21 +151,7 @@ const Projects = () => {
                         Live Demo
                       </a>
                     </Button>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="border-primary/30 hover:border-primary"
-                      asChild
-                    >
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </a>
-                    </Button>
+   
                   </div>
                 </CardContent>
               </Card>

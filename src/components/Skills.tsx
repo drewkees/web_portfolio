@@ -9,7 +9,7 @@ const Skills = () => {
         { name: "React", level: 95 },
         { name: "TypeScript", level: 90 },
         { name: "JavaScript", level: 95 },
-        { name: "Next.js", level: 85 },
+        { name: "Next.js", level: 70 },
         { name: "Tailwind CSS", level: 90 },
         { name: "HTML5/CSS3", level: 95 },
       ],
@@ -17,19 +17,20 @@ const Skills = () => {
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
+        { name: "Node.js", level: 70 },
+        { name: "Python", level: 95 },
         { name: "Laravel", level: 80 },
-        { name: "Express.js", level: 85 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 75 },
+        { name: "VB.NET Macros", level: 95 },
+        { name: "Express.js", level: 75 },
+        { name: "PostgreSQL", level: 50 },
+        { name: "MongoDB", level: 55 },
       ],
     },
     {
       title: "AI & Automation",
       skills: [
-        { name: "OpenAI API", level: 90 },
-        { name: "Machine Learning", level: 75 },
+        { name: "OpenAI API", level: 80 },
+        { name: "Machine Learning", level: 95 },
         { name: "Process Automation", level: 85 },
         { name: "API Integration", level: 95 },
         { name: "Workflow Optimization", level: 90 },
@@ -50,8 +51,7 @@ const Skills = () => {
   ];
 
   const certifications = [
-    "AWS Cloud Practitioner",
-    "Google Analytics Certified",
+    "Python Developer Certification",
     "React Developer Certification",
     "Agile Project Management",
   ];

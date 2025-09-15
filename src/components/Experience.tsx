@@ -6,9 +6,9 @@ const Experience = () => {
   const experiences = [
     {
       title: "Senior Software Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      company: "Bounty Plus Inc.",
+      location: "BGC Taguig City, NCR",
+      period: "2023 - Present",
       type: "Full-time",
       description: [
         "Led development of AI-powered automation platform serving 10,000+ users",
@@ -19,60 +19,18 @@ const Experience = () => {
       technologies: ["React", "Node.js", "Python", "AWS", "Docker", "PostgreSQL"]
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Inc.",
-      location: "Austin, TX",
-      period: "2020 - 2022",
-      type: "Full-time",
-      description: [
-        "Developed and maintained 15+ web applications using modern JavaScript frameworks",
-        "Collaborated with UX/UI designers to create responsive, user-friendly interfaces",
-        "Optimized database queries resulting in 30% performance improvement",
-        "Integrated third-party APIs and payment systems for e-commerce platforms"
-      ],
-      technologies: ["Vue.js", "Laravel", "MySQL", "Stripe API", "Redis", "Git"]
-    },
-    {
-      title: "AI Automation Specialist",
-      company: "SmartFlow Technologies",
-      location: "Remote",
-      period: "2021 - 2022",
-      type: "Contract",
-      description: [
-        "Built custom automation workflows using AI and machine learning algorithms",
-        "Reduced manual processing time by 70% through intelligent document processing",
-        "Developed chatbots and virtual assistants for customer service applications",
-        "Created data analysis tools for business intelligence and reporting"
-      ],
-      technologies: ["Python", "OpenAI API", "TensorFlow", "Pandas", "FastAPI"]
-    },
-    {
-      title: "Junior Web Developer",
-      company: "Creative Web Studios",
-      location: "Los Angeles, CA",
-      period: "2019 - 2020",
-      type: "Full-time",
-      description: [
-        "Contributed to frontend development of client websites and web applications",
-        "Implemented responsive designs and cross-browser compatibility",
-        "Collaborated with design team to translate mockups into functional interfaces",
-        "Participated in agile development processes and code reviews"
-      ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "PHP"]
-    },
-    {
-      title: "Software Development Intern",
-      company: "NextGen Solutions",
-      location: "Seattle, WA",
-      period: "Summer 2019",
+      title: "IT Intern",
+      company: "Phosclay Chemical Manufacturing",
+      location: "Dasmarinas, Cavite",
+      period: "2023",
       type: "Internship",
       description: [
         "Assisted in development of internal tools and applications",
         "Gained hands-on experience with version control and agile methodologies",
         "Participated in daily standups and sprint planning meetings",
-        "Contributed to documentation and testing procedures"
+        "Contributed to documentation and testing procedures",
       ],
-      technologies: ["Java", "Spring Boot", "MySQL", "Git", "Jenkins"]
+      technologies: ["Java", "MongoDB", "MySQL", "Vb.net",]
     }
   ];
 

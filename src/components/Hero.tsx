@@ -1,9 +1,29 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBackground from "@/assets/hero-background.jpg";
-import profilePlaceholder from "@/assets/profile-placeholder.jpg";
+import profilePlaceholder from "@/assets/profile.png";
+import profilePlaceholderLight from "@/assets/profile-light.png";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [isDark, setIsDark] = useState(
+    document.documentElement.classList.contains("dark")
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+
   const handleScrollToContact = () => {
     const element = document.querySelector("#contact");
     element?.scrollIntoView({ behavior: "smooth" });
@@ -95,9 +115,10 @@ const Hero = () => {
             <div className="relative group cursor-pointer" onClick={handleScrollToAbout}>
               <div className="relative overflow-hidden rounded-full">
                 <img
-                  src={profilePlaceholder}
+                  src={isDark ? profilePlaceholder : profilePlaceholderLight}
                   alt="Andrew C. Baldonado"
-                  className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-glow border-4 border-primary/20 transition-transform duration-300 group-hover:scale-105"
+                  className={`w-96 h-96 md:w-[28rem] md:h-[28rem] rounded-full object-contain transition-transform duration-300 group-hover:scale-105 ${isDark ? "bg-black" : "bg-transparent"}`}
+
                 />
                 <div className="absolute inset-0 rounded-full bg-hero-gradient opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
                 

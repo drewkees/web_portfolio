@@ -20,12 +20,12 @@ const Footer = () => {
     {
       name: "LinkedIn",
       icon: <Linkedin className="h-5 w-5" />,
-      url: "https://linkedin.com/in/andrew-baldonado",
+      url: "https://www.linkedin.com/in/andrew-baldonado-38134927b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
       name: "Email",
       icon: <Mail className="h-5 w-5" />,
-      url: "mailto:andrew@example.com",
+      url: "mailto:baldonado0514@gmail.com",
     },
   ];
 
@@ -91,9 +91,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Get In Touch</h3>
             <div className="space-y-2 text-secondary-foreground/80">
-              <p>San Francisco, CA</p>
-              <p>andrew@example.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>Taguig City, NCR</p>
+              <p>baldonado0514@gmail.com</p>
+              <p>+639554267104</p>
             </div>
             <p className="text-sm text-secondary-foreground/70">
               Available for freelance projects and full-time opportunities.
@@ -107,11 +107,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 text-sm text-secondary-foreground/70">
               <span>© {currentYear} Andrew C. Baldonado. All rights reserved.</span>
             </div>
-            <div className="flex items-center space-x-2 text-sm text-secondary-foreground/70">
-              <span>Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              <span>using React & TypeScript</span>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,44 +26,76 @@ const Contact = () => {
     }));
   };
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Message Sent!",
+  //       description: "Thank you for your message. I'll get back to you soon!",
+  //     });
+      
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       subject: "",
+  //       message: "",
+  //     });
+  //     setIsSubmitting(false);
+  //   }, 1500);
+  // };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        'service_rcenae7',       // Replace with your EmailJS Service ID
+        'template_mpcu4qm',      // Replace with your EmailJS Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'lmcJVVhX0-zvAFzdy'        // Replace with your EmailJS Public Key
+      );
+
       toast({
         title: "Message Sent!",
         description: "Thank you for your message. I'll get back to you soon!",
       });
-      
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
       });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
-
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      value: "andrew@example.com",
-      link: "mailto:andrew@example.com"
+      value: "baldonado0514@gmail.com",
+      link: "mailto:baldonado0514@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+639554267104",
       link: "tel:+15551234567"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Taguig City, NCR",
       link: "https://maps.google.com/?q=San+Francisco,+CA"
     },
   ];
