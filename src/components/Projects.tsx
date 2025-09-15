@@ -39,36 +39,6 @@ const Projects = () => {
       githubUrl: "https://github.com/andrewbaldonado/smart-home",
       featured: false,
     },
-    {
-      title: "Machine Learning Model Deployment",
-      description: "Scalable ML model deployment platform with automated testing, monitoring, and version control for data science teams.",
-      tech: ["Python", "FastAPI", "Docker", "AWS", "TensorFlow"],
-      category: "Machine Learning",
-      icon: <Zap className="h-6 w-6" />,
-      liveUrl: "https://ml-deploy.example.com",
-      githubUrl: "https://github.com/andrewbaldonado/ml-deploy",
-      featured: false,
-    },
-    {
-      title: "Real-time Collaboration Tool",
-      description: "Team collaboration platform with real-time messaging, file sharing, video calls, and project management features.",
-      tech: ["React", "Socket.io", "Node.js", "WebRTC", "Redis"],
-      category: "Web Development",
-      icon: <Globe className="h-6 w-6" />,
-      liveUrl: "https://collab-tool.example.com",
-      githubUrl: "https://github.com/andrewbaldonado/collab-tool",
-      featured: false,
-    },
-    {
-      title: "Cryptocurrency Trading Bot",
-      description: "Automated trading bot with advanced algorithms, risk management, and portfolio optimization for cryptocurrency markets.",
-      tech: ["Python", "Pandas", "API Integration", "Machine Learning"],
-      category: "Fintech",
-      icon: <Code className="h-6 w-6" />,
-      liveUrl: "https://crypto-bot.example.com",
-      githubUrl: "https://github.com/andrewbaldonado/crypto-bot",
-      featured: false,
-    },
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
