@@ -29,16 +29,7 @@ const Projects = () => {
       featured: true,
       image: fus,
     },
-    {
-      title: "Smart Home IoT Controller",
-      description: "Mobile-responsive web application for controlling IoT devices in smart homes. Features include device management, scheduling, and energy monitoring.",
-      tech: ["React", "Python", "IoT", "WebSocket", "MongoDB"],
-      category: "IoT Development",
-      icon: <Code className="h-6 w-6" />,
-      liveUrl: "https://smart-home.example.com",
-      githubUrl: "https://github.com/andrewbaldonado/smart-home",
-      featured: false,
-    },
+    
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
