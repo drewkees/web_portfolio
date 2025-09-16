@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import fus from "@/assets/fus.png";
 import library from "@/assets/library.png";
-
+import gym from "@/assets/gym.png";
 const Projects = () => {
   const projects = [
     {
@@ -28,6 +28,17 @@ const Projects = () => {
       githubUrl: "https://github.com/andrewbaldonado/ecommerce-dashboard",
       featured: true,
       image: fus,
+    },
+    {
+      title: "FitGym Fitness Gym System",
+      description: "A modern, web-based fitness gym management system that enables seamless monitoring of gym operations. It features an intuitive admin dashboard for managing members, tracking attendance, and overseeing subscriptions, as well as a streamlined member portal for profile management and progress tracking",
+      tech: ["Vite", "TypeScript","React Js","shadcn-ui","Tailwind CSS", "Supabase"],
+      category: "Web Development",
+      icon: <Zap className="h-6 w-6" />,
+      liveUrl: "https://fitgym-tau.vercel.app/",
+      githubUrl: "https://github.com/andrewbaldonado/ai-automation",
+      featured: false,
+      image: gym,
     },
     
   ];
