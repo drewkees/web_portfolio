@@ -11,13 +11,15 @@ const Experience = () => {
       period: "2023 - Present",
       type: "Full-time",
       description: [
-        "Led development of AI-powered automation platform serving 10,000+ users",
-        "Architected scalable microservices infrastructure reducing response time by 40%",
-        "Mentored junior developers and established coding standards across teams",
-        "Implemented CI/CD pipelines improving deployment efficiency by 60%"
+        "Created and deployed multiple business systems that significantly improved company operations.",
+        "Developed and implemented automation scripts to streamline production and inventory processes.",
+        "Designed and maintained macros to enhance operational efficiency.",
+        "Supported system development for financial, procurement, and sales functions.",
+        "Collaborated with teams to identify, test, and deploy software solutions."
       ],
       technologies: ["React", "Node.js", "Python", "AWS", "Docker", "PostgreSQL"]
     },
+
     {
       title: "IT Intern",
       company: "Phosclay Chemical Manufacturing",
