@@ -17,7 +17,7 @@ const Experience = () => {
         "Supported system development for financial, procurement, and sales functions.",
         "Collaborated with teams to identify, test, and deploy software solutions."
       ],
-      technologies: ["React", "Node.js", "Python", "AWS", "Docker", "PostgreSQL"]
+      technologies: ["React", "Node.js", "Python", "AWS", "Docker", "Vue","VB.net","PHP", "Javascript"]
     },
 
     {
