@@ -30,14 +30,14 @@ const Projects = () => {
       image: fus,
     },
     {
-      title: "FitGym Fitness Gym System",
+      title: "Fitness Gym System",
       description: "A modern, web-based fitness gym management system that enables seamless monitoring of gym operations. It features an intuitive admin dashboard for managing members, tracking attendance, and overseeing subscriptions, as well as a streamlined member portal for profile management and progress tracking",
       tech: ["Vite", "TypeScript","React Js","shadcn-ui","Tailwind CSS", "Supabase"],
       category: "Web Development",
       icon: <Zap className="h-6 w-6" />,
       liveUrl: "https://fitgym-tau.vercel.app/",
       githubUrl: "https://github.com/andrewbaldonado/ai-automation",
-      featured: false,
+      featured: true,
       image: gym,
     },
     
