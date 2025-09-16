@@ -35,7 +35,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-background">
+    <section className="min-h-screen pt-16 flex items-center justify-center relative overflow-hidden bg-white dark:bg-background">
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 items-center">
