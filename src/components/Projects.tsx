@@ -13,7 +13,7 @@ const Projects = () => {
       tech: ["Next.js", "TypeScript","React Js","Mysql"],
       category: "Web Development",
       icon: <Zap className="h-6 w-6" />,
-      liveUrl: "https://scnhs-learniverse.vercel.app/",
+      liveUrl: "https://librarymanagementsystem-two.vercel.app/login",
       githubUrl: "https://github.com/andrewbaldonado/ai-automation",
       featured: true,
       image: library,
