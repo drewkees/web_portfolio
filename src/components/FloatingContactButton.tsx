@@ -334,36 +334,7 @@ Be conversational, enthusiastic, and helpful!
 // Demo wrapper
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 p-8">
-      <div className="max-w-4xl mx-auto space-y-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            AI-Powered Portfolio Chat
-          </h1>
-          <p className="text-gray-600 dark:text-gray-400 mb-2">
-            Click the chat button to ask questions about Andrew!
-          </p>
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 px-4 py-2 rounded-full">
-            <Sparkles className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-            <span className="text-sm text-purple-700 dark:text-purple-300">Powered by Google Gemini AI</span>
-          </div>
-        </div>
-        
-        {/* Demo sections */}
-        {[1, 2, 3].map((i) => (
-          <div key={i} className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Section {i}
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400">
-              This is your portfolio content. The AI chatbot knows all about you and can answer visitor questions!
-            </p>
-          </div>
-        ))}
-      </div>
-
       <FloatingContactButton />
-    </div>
   );
 };
 

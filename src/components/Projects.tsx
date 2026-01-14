@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import fus from "@/assets/fus.png";
+import ipon365 from "@/assets/ipon365.png"
 import library from "@/assets/library.png";
 import gym from "@/assets/gym.png";
 const Projects = () => {
@@ -39,6 +40,17 @@ const Projects = () => {
       githubUrl: "https://github.com/andrewbaldonado/ai-automation",
       featured: true,
       image: gym,
+    },
+    {
+      title: "Ipon 365",
+      description: "Ipon365 is a fun and interactive savings tracker inspired by a viral TikTok idea. The concept is simple: spin a number from 1 to 365 each day, and the resulting number becomes the amount you “save” for that day. This app helps users track daily savings, monitor progress, and stay motivated to build a year-long habit of saving.",
+      tech: ["Vite", "TypeScript","React Js","Vercel", "Supabase"],
+      category: "Web Development",
+      icon: <Zap className="h-6 w-6" />,
+      liveUrl: "https://ipon365-savings.vercel.app/",
+      githubUrl: "https://github.com/andrewbaldonado/ai-automation",
+      featured: true,
+      image: ipon365,
     },
     
   ];
