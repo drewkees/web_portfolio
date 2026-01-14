@@ -48,7 +48,7 @@ const Projects = () => {
       category: "Web Development",
       icon: <Zap className="h-6 w-6" />,
       liveUrl: "https://www.ipon365.site/",
-      githubUrl: "https://github.com/andrewbaldonado/ai-automation",
+      githubUrl: "https://github.com/andrewbaldonado/ai-automatiosn",
       featured: true,
       image: ipon365,
     },
