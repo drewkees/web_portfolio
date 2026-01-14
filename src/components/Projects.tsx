@@ -47,7 +47,7 @@ const Projects = () => {
       tech: ["Vite", "TypeScript","React Js","Vercel", "Supabase"],
       category: "Web Development",
       icon: <Zap className="h-6 w-6" />,
-      liveUrl: "https://ipon365-savings.vercel.app/",
+      liveUrl: "https://www.ipon365.site/",
       githubUrl: "https://github.com/andrewbaldonado/ai-automation",
       featured: true,
       image: ipon365,
